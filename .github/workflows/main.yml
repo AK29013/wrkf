@@ -1,10 +1,9 @@
-main.yml
 name: Test Action
 
 on:
   push:
     branches:
-      - main  # or any branch you want to trigger the action
+      - main  # Trigger on push to the main branch
 
 jobs:
   test:
@@ -13,6 +12,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: 23f2001036@ds.study.iitm.ac.in
+      - name: Print a message
         run: echo "Hello, world!"
+
 
